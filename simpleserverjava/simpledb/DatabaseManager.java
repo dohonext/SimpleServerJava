@@ -11,8 +11,8 @@ import java.util.HashMap;
 import com.google.gson.Gson;
 
 public class DatabaseManager {
-	private static final String address = "jdbc:mysql://127.0.0.1:3306/photoshake";
-	private static final String id = "root";
+	private static final String address = "";
+	private static final String id = "";
 	private static final String pw = "";
 	private String query = null;
 	private ArrayList<Object> conditionsList = null;

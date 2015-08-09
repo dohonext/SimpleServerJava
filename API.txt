@@ -3,35 +3,6 @@
 URL                  METHOD         PARAMETERS                                    FUNCTION                                 ETC 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 /user                GET            -userId                                       Get user information
-                                    -(none)                                       Get users ranking (best & grossing)       
-                     POST			-userIdName, userNickName, userPassword		  User sign in	
-                     PUT            -userIdName, userNickname, userPassword,      Edit user profile
-                                     userProfile, userProfilePic
-/login               GET            -cookieString                                 Get user validation
-                     POST           -userIdName, userPassword                     User sign in
-/bestposting         GET            -bestpostingId                                Get a bestposting by Id                  +1 bestpostingView
-                                    -(none) || page                               Get bestpostings list (by page)
-/posting             GET            -postingId                                    Get a posting by Id                      +1 postingView
-                                    -(none) || page                               Get postings list (by page)
-                     POST           -postingSubject, postingText, postingPic,     Post a posting
-                     				 userId                           
-                     PUT            -postingSubject, postingText, postingPic,     Update the posting
-                     				 userId
-                     DELETE         -postingId, userId                            Delete the posting
-/comment             GET            -postingId                                    Get comments of the posting
-                     POST           -commentText, postingId, userId               Comment to the posting
-                     PUT            -commentText, userId                          Edit the comment
-                     DELETE         -commentId, userId                            Delete the posting
-/userpage            GET            -userId                                       Get a user page
-                     (POST)                                                       Posting a posting                        @override postingPost()
-
-                     
-
-
-
-
-[Backlog]
-
-1. Like, hate button handling    +- userExp
-2. User exp, level, type handling
-3. Get (best)postings list when get a (best)posting by Id : to show (best)postings list behind the posting
+                                    -(none)                                       
+                     POST			
+                     PUT           
